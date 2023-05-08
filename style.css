@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey:  hsl(213, 11%, 31%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+*{
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--very-dark-blue);
+}
+
+button{
+    display: block;
+    border: none;
+    padding: 13px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;  
+    border-radius: 50%;
+    width: 45px;
+    color: var(--light-grey);
+    background-color: var(--medium-grey);
+    transition: all 0.3s ease-in-out;
+}
+
+.container{
+    background-color: var(--dark-blue);
+    flex-direction: column;
+    color: #fff;
+    padding: 2rem;
+    /* box-shadow: 0px 0px 20px 0px black; */
+    border: 1px solid black;
+    border-radius: 35px;
+    width: 21rem;
+}
+.selection{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+h2{
+    margin-top: 25px ;
+    font-size: 25px;;
+}
+
+p{
+    margin-top: 10px;
+    font-size: 15px;
+    color: var(--light-grey);
+    line-height: 1.7em;
+}
+
+.set{
+    margin-top: 22px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.final{
+    width:100%;
+    border-radius: 40px;
+    margin-top: 25px;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+button:hover{
+    background-color: var(--light-grey);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.final:hover{
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.top:hover{
+    color: var(--light-grey);
+    background-color: var(--medium-grey);
+    cursor: default;
+}
+
+.noOf:active{
+    background-color: var(--orange);
+  color: var(--white);
+}
+
+.thankYou{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.illustrative{
+   width: 180px;
+}
+
+.ret{
+    display: flex;
+    background-color: var(--medium-grey);
+    justify-content: center;
+    margin-top: 25px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: var(--orange);
+    font-size: 15px;
+}
+
+.selected{
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+@media screen and (max-width:380px){
+    .container{
+        padding: 1.5rem;
+    }
+}
